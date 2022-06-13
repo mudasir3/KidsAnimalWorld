@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    android:background="@drawable/jungle_bkg"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/welcome_home_header" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"        
+        android:background="@color/txt_bg"
+        android:textStyle="bold"
+        android:textColor="@color/txt_list_color"
+        android:textSize="20dp"
+        android:text="Choose an animal:" />
+
+	<RadioGroup
+	    android:id="@+id/radioGroup"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:paddingLeft="@dimen/list_padding" >
+    
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:onClick="onRadioButtonClicked"
+        android:textStyle="bold"
+        android:text="crocodile" />
+    
+	<RadioButton
+	    android:id="@+id/radioButton2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:onClick="onRadioButtonClicked"
+        android:textStyle="bold"
+	    android:text="chimpanzee" />
+
+	<RadioButton
+	    android:id="@+id/radioButton3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:onClick="onRadioButtonClicked"
+        android:textStyle="bold"
+	    android:text="hippopotamus" />
+
+	<RadioButton
+	    android:id="@+id/radioButton4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="onRadioButtonClicked"
+        android:textStyle="bold"
+	    android:text="snake" />
+
+	<RadioButton
+	    android:id="@+id/radioButton5"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="onRadioButtonClicked"
+        android:textStyle="bold"
+	    android:text="elephant" />
+    
+	<RadioButton
+	    android:id="@+id/radioButton6"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="onRadioButtonClicked"
+        android:textStyle="bold"
+	    android:text="bonus animal" />
+    
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCredits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/list_txt_margin_left"
+        android:layout_marginTop="50dp"
+        android:background="#96d320"
+        android:minWidth="150dp"
+        android:onClick="displayCredits"
+        android:text="Credits"
+        android:textColor="@color/txt_list_color"
+        android:textStyle="bold" />
+
+</LinearLayout>
